@@ -1,11 +1,12 @@
 const UTIL = require('../util/util');
+const DATA = require('../data/data');
 
 module.exports = {
 
   exit: () => {
-    let fname = '';
+    let fname = DATA.user.name.split(' ')[0];
     var exit_arr = [
-      `Thank you ${fname}. Good Bye!!!`
+      `Thank you ${fname} for using RITZY Hotels & Resorts. Good Bye!!!`
     ];
     return UTIL.getRandomMessage(exit_arr);
   }

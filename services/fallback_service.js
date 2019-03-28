@@ -1,4 +1,5 @@
 const UTIL = require('../util/util');
+const DATA = require('../data/data');
 const { Carousel, Image, Suggestions } = require('actions-on-google');
 
 module.exports = {

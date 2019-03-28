@@ -16,12 +16,13 @@
     "ui",
     "chatbot"
   ],
-  "author": "Team Callback Cats",
+  "author": "Vortex",
   "license": "ISC",
   "dependencies": {
     "actions-on-google": "^2.6.0",
     "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.16.4",
-    "log4js": "^4.0.2"
+    "log4js": "^4.0.2",
+    "request": "^2.88.0"
   }
 }
