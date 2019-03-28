@@ -13,6 +13,7 @@
   const ERROR_UTIL = require('./util/errorUtil');
   const SESSION_UTIL = require('./util/sessionUtil');
   const welcome_service = require('./services/welcome_service');
+  const test_service = require('./services/ssml.service');
   const searchResort_service = require('./services/searchResort_service');
   const deposit_service = require('./services/deposit_service');
   const confirmedVacation_service = require('./services/confirmedVacation_service');
@@ -151,7 +152,14 @@
     }
 
     function testWebhook(agent) {
-      agent.add(`This went right inside Webhook`);
+      try {
+        return new Promise((resolve, reject) => {
+          test_service.test(agent, buildResponse, resolve);
+        });
+      }
+      catch (exception) {
+        ERROR_UTIL.serverError(exception, agent);
+      }
     }
 
 
