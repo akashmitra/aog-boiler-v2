@@ -22,7 +22,7 @@
     "actions-on-google": "^2.6.0",
     "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.16.4",
-    "log4js": "^4.0.2",
+    "log4js": "^6.4.0",
     "request": "^2.88.0",
     "random-js": "^2.0.0"
   }
